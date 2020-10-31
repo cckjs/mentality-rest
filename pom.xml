@@ -25,7 +25,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring-boot-version>2.0.0.RELEASE</spring-boot-version>
-        <junit-version>4.12</junit-version>
+        <junit-version>4.13.1</junit-version>
         <commons-lang-version>3.7</commons-lang-version>
         <commons-collection-version>3.2.2</commons-collection-version>
         <java-persist-version>2.2</java-persist-version>
