@@ -11,10 +11,9 @@ public interface UserService {
     /**
      * 用户名和密码查询用户
      * @param username
-     * @param password
      * @return
      */
-    User getUser(String username, String password);
+    User getUser(String username);
 
     /**
      * 添加用户

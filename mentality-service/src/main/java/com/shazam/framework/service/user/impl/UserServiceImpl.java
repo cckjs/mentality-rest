@@ -16,18 +16,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService{
 
-    private Map<String,User> cache = new HashMap<>();
-
-    //@Autowired
-    //private UserDao userDao;
+    @Autowired
+    private UserDao userDao;
 
     @Override
-    public User getUser(String username, String password) {
-        return cache.get(username);
+    public User getUser(String username) {
+        return userDao.findUserByUserName(username);
     }
 
     @Override
     public void addUser(User user) {
-         cache.put(user.getUserName(),user);
+         userDao.save(user);
     }
 }

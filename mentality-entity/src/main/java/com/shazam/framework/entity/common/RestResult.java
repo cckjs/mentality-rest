@@ -36,10 +36,14 @@ public class RestResult<T> extends BaseDO{
         this.message = message;
     }
 
-    public static <T> RestResult success(T data,RestResult<T> result){
-        result.setData(data);
-        result.setStatus(0);
+    public RestResult(T t){
+        this.data = t;
+    }
+
+    public static <T> RestResult success(T data){
+        RestResult<T> result = new RestResult<>(data);
         result.setMessage("ok");
+        result.setStatus(0);
         return result;
     }
 }
