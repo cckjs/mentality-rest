@@ -29,7 +29,7 @@
         <commons-lang-version>3.7</commons-lang-version>
         <commons-collection-version>3.2.2</commons-collection-version>
         <java-persist-version>2.2</java-persist-version>
-        <mysql-jdbc-version>8.0.19</mysql-jdbc-version>
+        <mysql-jdbc-version>8.0.28</mysql-jdbc-version>
     </properties>
 
     <dependencies>
